@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CC6EE88B1E08B35F004A6F6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6EE88A1E08B35F004A6F6F /* main.m */; };
 		CC6EE8931E0B4EF6004A6F6F /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6EE8921E0B4EF6004A6F6F /* Car.m */; };
+		CCA38D5C1E6FA4B70094718D /* Car+Maintenance.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA38D5B1E6FA4B70094718D /* Car+Maintenance.m */; };
 		CCD9D3C01E652B520025D974 /* Bicycle.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD9D3BF1E652B520025D974 /* Bicycle.m */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,8 @@
 		CC6EE88A1E08B35F004A6F6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC6EE8911E0B4EF6004A6F6F /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		CC6EE8921E0B4EF6004A6F6F /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		CCA38D5A1E6FA4B70094718D /* Car+Maintenance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Car+Maintenance.h"; sourceTree = "<group>"; };
+		CCA38D5B1E6FA4B70094718D /* Car+Maintenance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Car+Maintenance.m"; sourceTree = "<group>"; };
 		CCD9D3BD1E652A450025D974 /* StreetLegal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StreetLegal.h; sourceTree = "<group>"; };
 		CCD9D3BE1E652B520025D974 /* Bicycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bicycle.h; sourceTree = "<group>"; };
 		CCD9D3BF1E652B520025D974 /* Bicycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bicycle.m; sourceTree = "<group>"; };
@@ -52,6 +55,8 @@
 				CCD9D3BF1E652B520025D974 /* Bicycle.m */,
 				CC6EE8911E0B4EF6004A6F6F /* Car.h */,
 				CC6EE8921E0B4EF6004A6F6F /* Car.m */,
+				CCA38D5A1E6FA4B70094718D /* Car+Maintenance.h */,
+				CCA38D5B1E6FA4B70094718D /* Car+Maintenance.m */,
 				CCD9D3BD1E652A450025D974 /* StreetLegal.h */,
 				CC6EE8891E08B35F004A6F6F /* HelloObjectiveC */,
 				CC6EE8881E08B35F004A6F6F /* Products */,
@@ -132,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA38D5C1E6FA4B70094718D /* Car+Maintenance.m in Sources */,
 				CC6EE8931E0B4EF6004A6F6F /* Car.m in Sources */,
 				CCD9D3C01E652B520025D974 /* Bicycle.m in Sources */,
 				CC6EE88B1E08B35F004A6F6F /* main.m in Sources */,

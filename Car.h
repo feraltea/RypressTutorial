@@ -14,8 +14,12 @@
 }
 
 @property (copy) NSString *model;
+@property (readonly) double odometer;
 
--(void)drive; //defines method called drive 
+-(void)startEngine;
+-(void)drive; //defines method called drive
+-(void)turnLeft;
+-(void)turnRight;
 
 @end
 

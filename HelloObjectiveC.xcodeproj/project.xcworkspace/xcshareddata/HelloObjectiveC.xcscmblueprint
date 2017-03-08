@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EC7D3B8263E4538CC6BF8E98860EF96F35094E3B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C8F7CD9ECF241309D6157D7202F904CA6FB6BD43" : 9223372036854775807,
+    "EC7D3B8263E4538CC6BF8E98860EF96F35094E3B" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D39B02B0-4D87-4CE4-829A-ABC0C3994DFF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C8F7CD9ECF241309D6157D7202F904CA6FB6BD43" : "",
+    "EC7D3B8263E4538CC6BF8E98860EF96F35094E3B" : "HelloObjectiveC\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HelloObjectiveC",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HelloObjectiveC.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/feraltea\/HelloObjectiveC.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C8F7CD9ECF241309D6157D7202F904CA6FB6BD43"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/feraltea\/RypressTutorial.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EC7D3B8263E4538CC6BF8E98860EF96F35094E3B"
+    }
+  ]
+}

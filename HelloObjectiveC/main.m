@@ -10,6 +10,7 @@
 #import "Car.h"
 #import "Bicycle.h"
 #import "StreetLegal.h"
+#import "Car+Maintenance.h"
 
 /**
 int getRandomInteger(int minimum, int maximum) {
@@ -39,20 +40,35 @@ int main(int argc, const char * argv[]) {
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        id <StreetLegal> mysteryVehicle = [[Car alloc]init];
-        [mysteryVehicle signalLeftTurn];
-        [mysteryVehicle signalRightTurn];
+        Car *porsche = [[Car alloc]init];
+        porsche.model = @"911 Turbo";
         
-        mysteryVehicle = [[Bicycle alloc]init];
-        [mysteryVehicle signalLeftTurn];
+        Car *toyota = [[Car alloc]init];
+        toyota.model = @"tacoma";
         
-
-        Bicycle *honkyTonk = [[Bicycle alloc]init];
-        [honkyTonk startPedaling];
-        [honkyTonk signalLeftTurn];
-        [honkyTonk signalRightTurn];
-        [honkyTonk signalStop];
-        [honkyTonk lockToStructure:nil];
+        //using additional methods from car+maintenance
+        if([porsche needsOilChange]) {
+            [porsche changeOil];
+        }
+        
+        [porsche rotateTires];
+        [porsche jumpBatteryUsingCar:toyota];
+        
+        
+//        id <StreetLegal> mysteryVehicle = [[Car alloc]init];
+//        [mysteryVehicle signalLeftTurn];
+//        [mysteryVehicle signalRightTurn];
+//        
+//        mysteryVehicle = [[Bicycle alloc]init];
+//        [mysteryVehicle signalLeftTurn];
+//        
+//
+//        Bicycle *honkyTonk = [[Bicycle alloc]init];
+//        [honkyTonk startPedaling];
+//        [honkyTonk signalLeftTurn];
+//        [honkyTonk signalRightTurn];
+//        [honkyTonk signalStop];
+//        [honkyTonk lockToStructure:nil];
         
         
         
