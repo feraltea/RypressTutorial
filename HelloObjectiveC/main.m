@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "Car.h"
-#import "Bicycle.h"
-#import "StreetLegal.h"
+//#import "Bicycle.h"
+//#import "StreetLegal.h"
 #import "Car+Maintenance.h"
+#import "Coupe.h"
 
 /**
 int getRandomInteger(int minimum, int maximum) {
@@ -53,6 +54,11 @@ int main(int argc, const char * argv[]) {
         
         [porsche rotateTires];
         [porsche jumpBatteryUsingCar:toyota];
+        
+        Car *ford = [[Car alloc]init];
+        ford.model = @"F150";
+        [ford startEngine];
+        [ford drive];
         
         
 //        id <StreetLegal> mysteryVehicle = [[Car alloc]init];

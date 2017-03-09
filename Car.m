@@ -7,6 +7,14 @@
 //
 
 #import "Car.h"
+#import "Car+Car_Protected.h"
+
+//creates a class extension
+@interface Car()
+@property (readwrite) double odometer;
+-(BOOL)engineIsWorking;
+@end
+
 
 @implementation Car {
     
@@ -21,6 +29,7 @@
 }
 
 - (void)drive {
+    [self prepareToDrive];
     NSLog(@"driving a %@, vroom",_model);
 }
 
@@ -31,6 +40,11 @@
 -(void)turnRight {
     NSLog(@"The %@ is turning right",_model);
 }
+
+//-(BOOL)engineIsWorking {
+//    return YES;
+//    //in real world, this would return something useful :)
+//}
 
 
 @end
