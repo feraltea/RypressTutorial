@@ -41,25 +41,52 @@ int main(int argc, const char * argv[]) {
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        Car *porsche = [[Car alloc]init];
-        porsche.model = @"911 Turbo";
+        NSString *make = @"toyota";
         
-        Car *toyota = [[Car alloc]init];
-        toyota.model = @"tacoma";
+        NSString *(^getFullCarName)(NSString *) = ^(NSString *model) {
+            return [make stringByAppendingFormat:@"%@", model];
+        };
         
-        //using additional methods from car+maintenance
-        if([porsche needsOilChange]) {
-            [porsche changeOil];
-        }
+        NSLog(@"%@", getFullCarName(@" tacoma"));
         
-        [porsche rotateTires];
-        [porsche jumpBatteryUsingCar:toyota];
+        make = @"porsche"; //can't change the non-local variable.. stays defined as toyota from when first created
+        NSLog(@"%@", getFullCarName(@" 911 turbo"));
         
-        Car *ford = [[Car alloc]init];
-        ford.model = @"F150";
-        [ford startEngine];
-        [ford drive];
         
+//        //declare a block variable
+//        double(^distanceFromRateAndTime)(double rate, double time);
+//        
+//        //create and assign the block
+//        distanceFromRateAndTime = ^double(double rate, double time) { //takes 2 doubles as parameters and returns a double
+//            return rate * time;
+//        };
+//        
+//        //call the block
+//        double dx = distanceFromRateAndTime(35, 1.5);
+//        
+//        NSLog(@"a car diving 35mph will travel @%.2f miles in 1.5 hours.", dx);
+//        
+        
+        
+//        Car *porsche = [[Car alloc]init];
+//        porsche.model = @"911 Turbo";
+//        
+//        Car *toyota = [[Car alloc]init];
+//        toyota.model = @"tacoma";
+//        
+//        //using additional methods from car+maintenance
+//        if([porsche needsOilChange]) {
+//            [porsche changeOil];
+//        }
+//        
+//        [porsche rotateTires];
+//        [porsche jumpBatteryUsingCar:toyota];
+//        
+//        Car *ford = [[Car alloc]init];
+//        ford.model = @"F150";
+//        [ford startEngine];
+//        [ford drive];
+//        
         
 //        id <StreetLegal> mysteryVehicle = [[Car alloc]init];
 //        [mysteryVehicle signalLeftTurn];
