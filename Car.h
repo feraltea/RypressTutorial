@@ -16,6 +16,11 @@
 @property (copy) NSString *model;
 @property (readonly) double odometer;
 
+-(void)driveForDuration:(double)duration WithVariableSpeed:(double(^)(double time))speedFunction
+                  steps:(int)numSteps;
+
+
+
 -(void)startEngine;
 -(void)drive; //defines method called drive
 -(void)turnLeft;

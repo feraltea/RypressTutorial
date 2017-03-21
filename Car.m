@@ -41,10 +41,17 @@
     NSLog(@"The %@ is turning right",_model);
 }
 
-//-(BOOL)engineIsWorking {
-//    return YES;
-//    //in real world, this would return something useful :)
-//}
+-(BOOL)engineIsWorking {
+    return YES;
+    //in real world, this would return something useful :)
+}
+
+-(void)driveForDuration:(double)duration WithVariableSpeed :(double (^)(double))speedFunction steps:(int)numSteps {
+    double dt = duration / numSteps;
+    for (int i =1; i<numSteps; i++) {
+        _odometer += speedFunction(i*dt)*dt;
+    }
+}
 
 
 @end
